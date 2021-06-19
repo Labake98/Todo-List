@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <title>My Todo List</title>
+    <script src="https://kit.fontawesome.com/d7d8bd05ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container ">
+        <h1>
+            <i class="fas fa-bookmark"></i>
+            My
+            <span>
+                Todo List
+            </span>
+        </h1>
+        <div class="target"></div>
+        <div class="wrapper">
+            <form class="form" id="form">
+              <div class="form-group">
+                <i class="fas fa-tasks  "></i>
+                <label for="task">Task</label>
+                <input type="text" id="task" placeholder="Enter your task..." />
+              </div>
+              <div>
+                <i class="fas fa-calendar"></i>
+                <label for="task">Date</label>
+                <input type="date" id="date" placeholder="Enter date..." />
+              </div>
+              <div>
+                  <input type="submit" class="btn form-control" value="Submit Task "/>
+              </div>
+            </form>
+            <div class="head">
+            <h3><span> All </span> Tasks</h3>    
+            </div>
+            <div class="row">
+                <table class="show">
+                    <thead>
+                        <tr>
+                            <td>Task</td>
+                            <td>Date</td>
+                            <td>Edit</td>
+                            <td>Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
